@@ -583,8 +583,8 @@ footer {
 .pager .page-number {
     font-size:16px;
     font-weight:bold;
-    color:#FFFF00;
-    text-shadow: 2px 2px 2px #000, 0px 0px 10px #fff, 0px 0px 20px #fff;
+    color:#0e94ec;
+    /*text-shadow: 2px 2px 2px #000, 0px 0px 10px #fff, 0px 0px 20px #fff;*/
 }
 
 /***********************/
@@ -601,3 +601,12 @@ footer {
 }
 
 /*********************/
+
+.readmore {
+    background: #fd4326 none repeat scroll 0 0;
+    color: white;
+    cursor: pointer;
+    float: right;
+    padding: 8px;
+}
+

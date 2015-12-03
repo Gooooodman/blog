@@ -1,5 +1,29 @@
 <div id="tags_cloud" class="">
+{#<div id="div1" class="">#}
+{#	<a href="http://www.miaov.com">JS课程</a>#}
+{#	<a href="http://www.miaov.com/course_outline_1.html.php" class="red">教程</a>#}
+{#	<a href="http://www.miaov.com">试听</a>#}
+{#	<a href="http://www.miaov.com">精品</a>#}
+{#	<a href="http://www.miaov.com" class="blue">妙味课堂</a>#}
+{#	<a href="http://blog.miaov.com/722.html">SEO</a>#}
+{#	<a href="http://www.miaov.com" class="red">特效</a>#}
+{#	<a href="http://www.miaov.com/course.html.php" class="yellow">JavaScript</a>#}
+{#	<a href="http://www.miaov.com/course_detail_1.html.php">miaov</a>#}
+{#	<a href="http://www.miaov.com/course_detail_2.html.php" class="red">CSS</a>#}
+{#	<a href="http://www.miaov.com/course_detail_3.html.php">求职</a>#}
+{#	<a href="http://www.miaov.com/course_detail_2.html.php" class="blue">面试题</a>#}
+{#	<a href="http://www.miaov.com/contact.html.php">继承</a>#}
+{#	<a href="http://www.miaov.com/" class="red">妙味课堂</a>#}
+{#	<a href="http://www.miaov.com/about.html.php" class="blue">OOP</a>#}
+{#	<a href="http://www.miaov.com/work.html.php">XHTML</a>#}
+{#	<a href="http://www.miaov.com/message.html.php" class="blue">setInterval</a>#}
+{#	<a href="http://blog.miaov.com/">W3C</a>#}
+{#	<a href="http://blog.miaov.com/716.html">石川</a>#}
+{#	<a href="http://www.miaov.com/" class="yellow">妙味课堂</a>#}
+{#	<a href="http://blog.miaov.com/676.html">blue</a>#}
+{##}
 </div>
+
 
 <style>
 #tags_cloud {
@@ -8,6 +32,15 @@
     margin-bottom: 20px;
 }
 </style>
+
+
+
+
+
+
+
+
+
 
 <script src="/static/lib/d3/d3.js"></script>
 <script src="/static/js/d3.layout.cloud.js"></script>
@@ -18,7 +51,7 @@
     //var tags = [ "反汇编","OllyDbg","PE","ASM","Django","Python","Java","Bootstrap","Gentoo","linux","Shell","加密与解密","逆向","爬虫",];
     var tags = [ "shell","Python"];
     var words = tags.concat(tags).concat(tags);
-      
+
     d3.layout.cloud().size([250, 250])
         .words(words.map(function(d) {
             return {text: d, size: 10 + Math.random() * 25};
@@ -45,13 +78,9 @@
                 .style("font-family", "'Microsoft YaHei','WenQuanYi Micro Hei','tohoma,sans-serif'")
                 .style("fill", fill(i))
                 .attr("text-anchor", "middle")
-                .attr("transform", 
+                .attr("transform",
                     "translate(" + [words[i].x, words[i].y] + ")rotate(" + words[i].rotate + ")"
           )
         }
     }
 </script>
-
-
-
-

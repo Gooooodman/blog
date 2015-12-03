@@ -11,7 +11,7 @@ from django.core.exceptions import PermissionDenied
 from django.contrib import auth
 from django.contrib.auth.forms import PasswordChangeForm,SetPasswordForm
 from django.contrib.auth.tokens import default_token_generator
-from blog.models import Article,Category,Carousel,Column,Nav,News
+from blog.models import Article,Category,Carousel,Column,Nav,News,Link
 from vmaig_comments.models import Comment
 from vmaig_auth.models import VmaigUser
 from vmaig_auth.forms import VmaigUserCreationForm,VmaigPasswordRestForm
@@ -41,6 +41,8 @@ class BaseMixin(object):
             context['nav_list'] =  Nav.objects.filter(status=0)
             #最新评论
             context['latest_comment_list'] = Comment.objects.order_by("-create_time")[0:10]
+            #链接
+            context['links'] = Link.objects.filter(status=0)
 
         except Exception as e:
             logger.error(u'[BaseMixin]加载基本信息出错')

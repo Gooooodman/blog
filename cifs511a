@@ -1,0 +1,376 @@
+[2015-11-28 16:37:11,548] [ERROR] base : Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/core/handlers/base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/core/urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/core/urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/core/urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/local/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/data/blog/vmaig_blog/urls.py", line 9, in <module>
+    url(r'',include('vmaig_auth.urls')),
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/conf/urls/__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/data/blog/vmaig_auth/urls.py", line 2, in <module>
+    from vmaig_auth.views import UserControl
+  File "/data/blog/vmaig_auth/views.py", line 15, in <module>
+    from PIL import Image
+ImportError: No module named PIL
+[2015-11-28 16:37:11,548] [ERROR] base : Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/core/handlers/base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/core/urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/core/urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/core/urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/local/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/data/blog/vmaig_blog/urls.py", line 9, in <module>
+    url(r'',include('vmaig_auth.urls')),
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/conf/urls/__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/data/blog/vmaig_auth/urls.py", line 2, in <module>
+    from vmaig_auth.views import UserControl
+  File "/data/blog/vmaig_auth/views.py", line 15, in <module>
+    from PIL import Image
+ImportError: No module named PIL
+[2015-11-28 16:37:11,948] [ERROR] base : Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/core/handlers/base.py", line 108, in get_response
+    response = middleware_method(request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/middleware/common.py", line 74, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/core/urlresolvers.py", line 647, in is_valid_path
+    resolve(path, urlconf)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/core/urlresolvers.py", line 522, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/core/urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/core/urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/core/urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/local/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/data/blog/vmaig_blog/urls.py", line 9, in <module>
+    url(r'',include('vmaig_auth.urls')),
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/conf/urls/__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/data/blog/vmaig_auth/urls.py", line 2, in <module>
+    from vmaig_auth.views import UserControl
+  File "/data/blog/vmaig_auth/views.py", line 15, in <module>
+    from PIL import Image
+ImportError: No module named PIL
+[2015-11-28 16:37:11,948] [ERROR] base : Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/core/handlers/base.py", line 108, in get_response
+    response = middleware_method(request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/middleware/common.py", line 74, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/core/urlresolvers.py", line 647, in is_valid_path
+    resolve(path, urlconf)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/core/urlresolvers.py", line 522, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/core/urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/core/urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/core/urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/local/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/data/blog/vmaig_blog/urls.py", line 9, in <module>
+    url(r'',include('vmaig_auth.urls')),
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/conf/urls/__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/data/blog/vmaig_auth/urls.py", line 2, in <module>
+    from vmaig_auth.views import UserControl
+  File "/data/blog/vmaig_auth/views.py", line 15, in <module>
+    from PIL import Image
+ImportError: No module named PIL
+[2015-11-28 16:37:12,119] [ERROR] base : Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/core/handlers/base.py", line 108, in get_response
+    response = middleware_method(request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/middleware/common.py", line 74, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/core/urlresolvers.py", line 647, in is_valid_path
+    resolve(path, urlconf)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/core/urlresolvers.py", line 522, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/core/urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/core/urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/core/urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/local/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/data/blog/vmaig_blog/urls.py", line 9, in <module>
+    url(r'',include('vmaig_auth.urls')),
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/conf/urls/__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/data/blog/vmaig_auth/urls.py", line 2, in <module>
+    from vmaig_auth.views import UserControl
+  File "/data/blog/vmaig_auth/views.py", line 15, in <module>
+    from PIL import Image
+ImportError: No module named PIL
+[2015-11-28 16:37:12,119] [ERROR] base : Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/core/handlers/base.py", line 108, in get_response
+    response = middleware_method(request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/middleware/common.py", line 74, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/core/urlresolvers.py", line 647, in is_valid_path
+    resolve(path, urlconf)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/core/urlresolvers.py", line 522, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/core/urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/core/urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/core/urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/local/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/data/blog/vmaig_blog/urls.py", line 9, in <module>
+    url(r'',include('vmaig_auth.urls')),
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/conf/urls/__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/data/blog/vmaig_auth/urls.py", line 2, in <module>
+    from vmaig_auth.views import UserControl
+  File "/data/blog/vmaig_auth/views.py", line 15, in <module>
+    from PIL import Image
+ImportError: No module named PIL
+[2015-11-28 17:33:57,145] [ERROR] views : [UserControl]用户上传头像为空:[root]
+[2015-12-02 12:07:14,522] [ERROR] views : [UserControl]用户上传头像为空:[root]
+[2015-12-02 16:51:23,671] [ERROR] base : Internal Server Error: /tag/shell/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/core/handlers/base.py", line 164, in get_response
+    response = response.render()
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/response.py", line 158, in render
+    self.content = self.rendered_content
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/response.py", line 135, in rendered_content
+    content = template.render(context, self._request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/backends/django.py", line 74, in render
+    return self.template.render(context)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/base.py", line 209, in render
+    return self._render(context)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/defaulttags.py", line 329, in render
+    return nodelist.render(context)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/defaulttags.py", line 576, in render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/defaulttags.py", line 217, in render
+    nodelist.append(node.render(context))
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/loader_tags.py", line 151, in render
+    template = context.template.engine.get_template(template)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/loaders/base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/loaders/base.py", line 17, in load_template
+    template_name, template_dirs)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/loaders/app_directories.py", line 39, in load_template_source
+    return fp.read(), filepath
+  File "/usr/local/lib/python2.7/codecs.py", line 296, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xb5 in position 92: invalid start byte
+[2015-12-02 16:51:23,671] [ERROR] base : Internal Server Error: /tag/shell/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/core/handlers/base.py", line 164, in get_response
+    response = response.render()
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/response.py", line 158, in render
+    self.content = self.rendered_content
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/response.py", line 135, in rendered_content
+    content = template.render(context, self._request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/backends/django.py", line 74, in render
+    return self.template.render(context)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/base.py", line 209, in render
+    return self._render(context)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/defaulttags.py", line 329, in render
+    return nodelist.render(context)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/defaulttags.py", line 576, in render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/defaulttags.py", line 217, in render
+    nodelist.append(node.render(context))
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/loader_tags.py", line 151, in render
+    template = context.template.engine.get_template(template)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/loaders/base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/loaders/base.py", line 17, in load_template
+    template_name, template_dirs)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/template/loaders/app_directories.py", line 39, in load_template_source
+    return fp.read(), filepath
+  File "/usr/local/lib/python2.7/codecs.py", line 296, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xb5 in position 92: invalid start byte
+[2015-12-02 16:57:38,459] [ERROR] views : [ColumnView]访问专栏不存在: [shell]
+[2015-12-02 17:27:47,293] [ERROR] views : [UserControl]用户注册邮件发送失败:[admin]/[admin@admin.cm]
+[2015-12-02 17:27:57,758] [ERROR] views : [UserControl]用户注册邮件发送失败:[admin]/[694366594@qq.com]
+[2015-12-02 17:27:59,196] [ERROR] views : [UserControl]用户注册邮件发送失败:[admin]/[admin@admin.cm]
+[2015-12-02 17:32:19,930] [ERROR] base : Internal Server Error: /usercontrol/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/data/blog/vmaig_auth/views.py", line 37, in post
+    return self.register(request)
+  File "/data/blog/vmaig_auth/views.py", line 107, in register
+    new_user = form.save()
+  File "/data/blog/vmaig_auth/forms.py", line 87, in save
+    user.save()
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/db/models/base.py", line 734, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/db/models/base.py", line 762, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/db/models/base.py", line 846, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/db/models/base.py", line 885, in _do_insert
+    using=using, raw=raw)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/db/models/manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/db/models/query.py", line 920, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/db/models/sql/compiler.py", line 974, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/db/utils.py", line 97, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/db/backends/mysql/base.py", line 124, in execute
+    return self.cursor.execute(query, args)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1062, "Duplicate entry 'admin' for key 'username'")
+[2015-12-02 17:32:19,930] [ERROR] base : Internal Server Error: /usercontrol/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/data/blog/vmaig_auth/views.py", line 37, in post
+    return self.register(request)
+  File "/data/blog/vmaig_auth/views.py", line 107, in register
+    new_user = form.save()
+  File "/data/blog/vmaig_auth/forms.py", line 87, in save
+    user.save()
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/db/models/base.py", line 734, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/db/models/base.py", line 762, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/db/models/base.py", line 846, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/db/models/base.py", line 885, in _do_insert
+    using=using, raw=raw)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/db/models/manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/db/models/query.py", line 920, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/db/models/sql/compiler.py", line 974, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/db/utils.py", line 97, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/db/backends/mysql/base.py", line 124, in execute
+    return self.cursor.execute(query, args)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1062, "Duplicate entry 'admin' for key 'username'")
