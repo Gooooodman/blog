@@ -9,9 +9,9 @@ https://docs.djangoproject.com/en/1.8/topics/settings/
 
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.8/ref/settings/
-"""
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+"""
 import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -22,7 +22,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'p1p2e^77+6ex*1@-s6hzcx7l3bx#g2q0w1za1c-x-1p@n6z^x*'
-
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True
 
@@ -143,7 +142,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
-
+STATIC_URL = '/static/'
 
 #设置user model
 AUTH_USER_MODEL = "vmaig_auth.VmaigUser"
@@ -238,10 +237,10 @@ PAGE_NUM = 5
 
 # #email配置#########################################
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.qq.com'                       #SMTP地址 例如: smtp.163.com
+EMAIL_HOST = 'smtp.163.com'                       #SMTP地址 例如: smtp.163.com
 EMAIL_PORT = 25                       #SMTP端口 例如: 25
-EMAIL_HOST_USER = '121736729@qq.com'                  #我自己的邮箱 例如: xxxxxx@163.com
-EMAIL_HOST_PASSWORD = '312905509.'              #我的邮箱密码 例如  xxxxxxxxx
+EMAIL_HOST_USER = 'lupuxiao1@163.com'                  #我自己的邮箱 例如: xxxxxx@163.com
+EMAIL_HOST_PASSWORD = 'lupuxiao123'              #我的邮箱密码 例如  xxxxxxxxx
 EMAIL_SUBJECT_PREFIX = u'goooood'       #为邮件Subject-line前缀,默认是'[django]'
 EMAIL_USE_TLS = True                  #与SMTP服务器通信时，是否启动TLS链接(安全链接)。默认是false
 
