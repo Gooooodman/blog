@@ -159,3 +159,14 @@ class News(models.Model):
         app_label = string_with_title('blog',u"博客管理")
 
 
+class Head(models.Model):
+    content = models.CharField(max_length=100,verbose_name=u'警告框')
+    status = models.IntegerField(default=0,choices=STATUS.items(),verbose_name=u'警告框状态')
+
+    class Meta:
+        verbose_name_plural = verbose_name = u"警告框"
+        ordering = ['-status']
+        app_label = string_with_title('blog',u"博客管理")
+
+    def __unicode__(self):
+        return self.content

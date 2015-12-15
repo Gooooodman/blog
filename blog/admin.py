@@ -1,6 +1,6 @@
 #coding:utf-8
 from django.contrib import admin
-from blog.models import Article,Category,Carousel,Nav,Column,News,Link
+from blog.models import Article,Category,Carousel,Nav,Column,News,Link,Head
 
 
 class CategoryAdmin(admin.ModelAdmin):
@@ -66,6 +66,13 @@ class LinkAdmin(admin.ModelAdmin):
     fields = ('title','url','status')
     list_filter = ('status',)
 
+
+class HeadAdmin(admin.ModelAdmin):
+    search_fields = ('content',)
+    list_display = ('content','status')
+    fields = ('content','status')
+    list_filter = ('status',)  
+
 admin.site.register(Category,CategoryAdmin)
 admin.site.register(Article,ArticleAdmin)
 admin.site.register(News,NewsAdmin)
@@ -73,3 +80,4 @@ admin.site.register(Nav,NavAdmin)
 admin.site.register(Column,ColumnAdmin)
 admin.site.register(Carousel,CarouselAdmin)
 admin.site.register(Link,LinkAdmin)
+admin.site.register(Head,HeadAdmin)

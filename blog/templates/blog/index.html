@@ -6,7 +6,13 @@
         <!-- 警告框 -->
         <div class="well alert hidden-xs fade in">
             <button class="close" data-dismiss="alert" type="button">&times;</button>
-             梧桐树，三更雨，不道离情正苦。一叶叶，一声声，空阶滴到明。-- 温庭筠
+             {% for caution in  cautions %}
+                {% if caution %}
+                    {{ caution.content }}
+                {% else %}
+                梧桐树，三更雨，不道离情正苦。一叶叶，一声声，空阶滴到明。-- 温庭筠
+                {% endif %}  
+            {% endfor %} 
         </div>
 
         <div class="visible-xs">
